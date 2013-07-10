@@ -1,2 +1,5 @@
-<h1>Products#edit</h1>
-<p>Find me in app/views/products/edit.html.erb</p>
+<h1>Edit the product</h1>
+<%= render 'form' %>
+<div class = 'back'>
+	<p><%= link_to 'Back to the index', products_path %> | <%= link_to 'Back to the product', product_path %> </p>
+</div>
