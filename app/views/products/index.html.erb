@@ -1,8 +1,8 @@
 <h1>Products</h1>
 <div class = 'index_products'>
 	<% @products.each do |p| %>
-		<h3><%= p.name %></h3>
+		<h3><%= link_to p.name, product_path(p) %></h3>
 		<h4><%= number_to_currency(p.price_in_cents/100) %></h4>
-		<p><%= truncate(p.description, :length => 20) %></p>
+		<p><%= truncate(p.description, :length => 50) %></p>
 	<% end %>
 </div>
